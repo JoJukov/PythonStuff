@@ -3,7 +3,7 @@ from math import sin, cos, radians
 
 def p_l_m(l: float, m: float):
     if l == 0 and m == 0:
-        return 1
+        return lambda x: 1
     elif l == 1 and m == 0:
         return lambda x: cos(radians(x))
     elif l == 1 and m == 1:
